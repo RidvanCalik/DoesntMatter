@@ -16,7 +16,7 @@ If you want to use the project properly, you need a database.
 
 
 ## Frontend Setup
-Frontend writed by ReactJS 
-you should be run this commands, if you want to use  project
+Frontend writed by NextJS  
+If you want to use the project, you should follow this commands
 > npm install    #install node packages  
 > npm run dev    #install node packages
