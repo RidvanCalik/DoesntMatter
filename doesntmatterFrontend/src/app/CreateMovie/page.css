@@ -1,0 +1,18 @@
+#movieCard{
+    position: relative;
+    padding: 20px;
+}
+
+#movieCard iframe{
+    min-height: 350px;
+    width: 100%;
+    height: 100%;
+}
+#movieCard img{
+    max-height: 280px;
+    position: absolute;
+    right: 40px;
+    top: 170px;
+    height: 80% !important;
+    object-fit: contain;
+}

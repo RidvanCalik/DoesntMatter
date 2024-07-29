@@ -1,0 +1,22 @@
+html,
+body {
+  background-image: url(/bg.jpg); 
+  background-size: 10%;
+  background-repeat: repeat;
+    max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+main{
+height: calc(100vh - 100px);
+}
+a{
+  text-decoration: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
