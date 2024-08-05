@@ -17,7 +17,9 @@ builder.Services.AddCors(options =>
    options.AddPolicy(name: ALLOW_LOCALHOST_CORS,
                       policy =>
                       {
-                          policy.WithOrigins("*");
+                          policy.AllowAnyHeader();
+                          policy.AllowAnyOrigin();
+                         
                       });
 });
 var app = builder.Build();

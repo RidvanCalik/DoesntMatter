@@ -29,26 +29,38 @@ namespace doesntmatter.Controllers
         }
 
         // GET: api/Movies/GetComingSoonMovie
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Movie>>> GetComingSoonMovie()
-        {
-            DateTime currentDate = DateTime.Now;
-            return await _context.Movie.Where(m=>m.ReleaseDate>currentDate).ToListAsync();
-        }
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Movie>>> GetComingSoonMovie()
+        //{
+        //    DateTime currentDate = DateTime.Now;
+        //    return await _context.Movie.Where(m=>m.ReleaseDate>currentDate).ToListAsync();
+        //}
 
-        // GET: api/Movies/GetReleasedMovie
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Movie>>> GetReleasedMovie()
-        {
-            DateTime currentDate = DateTime.Now;
-            return await _context.Movie.Where(m => m.ReleaseDate < currentDate).ToListAsync();
-        }
+        //// GET: api/Movies/GetReleasedMovie
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Movie>>> GetReleasedMovie()
+        //{
+        //    DateTime currentDate = DateTime.Now;
+        //    return await _context.Movie.Where(m => m.ReleaseDate < currentDate).ToListAsync();
+        //}
 
         // GET: api/Movies/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Movie>> GetMovie(int id)
         {
             var movie = await _context.Movie.FindAsync(id);
+
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
+            return movie;
+        }
+        [HttpGet("{IMBDid}")]
+        public async Task<ActionResult<Movie>> GetMovieByIMBD(string IMBDid)
+        {
+            var movie = await _context.Movie.AsNoTracking().Where(m=>m.imdbID == IMBDid).FirstOrDefaultAsync();
 
             if (movie == null)
             {

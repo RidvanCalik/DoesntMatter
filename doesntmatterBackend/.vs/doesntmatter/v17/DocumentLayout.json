@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ridvan\\source\\repos\\doesntmatter\\",
+  "WorkspaceRootPath": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{582EF33C-FFF2-4E4E-A60A-BCD7BF7B62F2}|doesntmatter\\doesntmatter.csproj|c:\\users\\ridvan\\source\\repos\\doesntmatter\\doesntmatter\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{582EF33C-FFF2-4E4E-A60A-BCD7BF7B62F2}|doesntmatter\\doesntmatter.csproj|c:\\users\\ridvan\\source\\repos\\doesntmatter\\doesntmatterbackend\\doesntmatter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582EF33C-FFF2-4E4E-A60A-BCD7BF7B62F2}|doesntmatter\\doesntmatter.csproj|solutionrelative:doesntmatter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582EF33C-FFF2-4E4E-A60A-BCD7BF7B62F2}|doesntmatter\\doesntmatter.csproj|c:\\users\\ridvan\\source\\repos\\doesntmatter\\doesntmatterbackend\\doesntmatter\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{582EF33C-FFF2-4E4E-A60A-BCD7BF7B62F2}|doesntmatter\\doesntmatter.csproj|solutionrelative:doesntmatter\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582EF33C-FFF2-4E4E-A60A-BCD7BF7B62F2}|doesntmatter\\doesntmatter.csproj|c:\\users\\ridvan\\source\\repos\\doesntmatter\\doesntmatterbackend\\doesntmatter\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582EF33C-FFF2-4E4E-A60A-BCD7BF7B62F2}|doesntmatter\\doesntmatter.csproj|solutionrelative:doesntmatter\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Migrations\\20240804234203_movieModelFix4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:doesntmatter\\Migrations\\20240804234203_movieModelFix4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,12 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Program.cs",
+              "RelativeDocumentMoniker": "doesntmatter\\Program.cs",
+              "ToolTip": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Program.cs",
+              "RelativeToolTip": "doesntmatter\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T00:23:26.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20240804234203_movieModelFix4.cs",
+              "DocumentMoniker": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Migrations\\20240804234203_movieModelFix4.cs",
+              "RelativeDocumentMoniker": "doesntmatter\\Migrations\\20240804234203_movieModelFix4.cs",
+              "ToolTip": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Migrations\\20240804234203_movieModelFix4.cs",
+              "RelativeToolTip": "doesntmatter\\Migrations\\20240804234203_movieModelFix4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T23:42:03.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "doesntmatter\\Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Models\\Movie.cs",
+              "RelativeToolTip": "doesntmatter\\Models\\Movie.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAcwBQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T22:47:02.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MoviesController.cs",
-              "DocumentMoniker": "C:\\Users\\ridvan\\source\\repos\\doesntmatter\\doesntmatter\\Controllers\\MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "doesntmatter\\Controllers\\MoviesController.cs",
-              "ToolTip": "C:\\Users\\ridvan\\source\\repos\\doesntmatter\\doesntmatter\\Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\Controllers\\MoviesController.cs",
               "RelativeToolTip": "doesntmatter\\Controllers\\MoviesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowD4AAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-28T19:02:40.138Z",
               "EditorCaption": ""

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4DXCQz2YLgPPKE4RoG7zXW9NXBx8p6Y6Gte1ZZF7k8e/qxL2B7IF1mQ1LxufVt7deOkY5zVAjMMknKToSAx/MA==",
+  "dgSpecHash": "1snHxDRt+UCcNnWXqMDGHvbNaBAFzhPAd6oBzScrWw9H/2EsRQCLPfRdkDcCCTPljSvCxRUPpaukOsKTdGk2/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ridvan\\source\\repos\\doesntmatter\\doesntmatter\\doesntmatter.csproj",
+  "projectFilePath": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\doesntmatter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ridvan\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ridvan\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

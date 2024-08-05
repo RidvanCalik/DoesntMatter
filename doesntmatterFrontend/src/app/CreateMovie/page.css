@@ -1,18 +1,42 @@
-#movieCard{
+
+.movieCard{
+    cursor: pointer;
     position: relative;
-    padding: 20px;
+}
+.movieCard:hover img{
+    transition:  1000ms;
+    filter: blur(4px);
+}
+.movieCard:hover .decription{
+    opacity: 1;
+}
+.movieCard .decription{
+    z-index: 99;
+    transition:  450ms;
+    opacity: 0;
+    position: absolute;
+    color: whitesmoke;
+    bottom: 0;
+}
+.movieCard .movieListPoster{
+    height: 200px;
+    width: 135px;
+    object-fit: cover;
 }
 
-#movieCard iframe{
-    min-height: 350px;
+
+
+
+
+.movieRatings{
+width: 200px;
+height: 75px !important;
+}
+
+
+#masterPoster {
+    object-position: top;
+    object-fit: cover;
     width: 100%;
     height: 100%;
-}
-#movieCard img{
-    max-height: 280px;
-    position: absolute;
-    right: 40px;
-    top: 170px;
-    height: 80% !important;
-    object-fit: contain;
 }

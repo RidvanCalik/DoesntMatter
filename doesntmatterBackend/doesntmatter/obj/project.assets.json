@@ -8268,11 +8268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ridvan\\source\\repos\\doesntmatter\\doesntmatter\\doesntmatter.csproj",
+      "projectUniqueName": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\doesntmatter.csproj",
       "projectName": "doesntmatter",
-      "projectPath": "C:\\Users\\ridvan\\source\\repos\\doesntmatter\\doesntmatter\\doesntmatter.csproj",
+      "projectPath": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\doesntmatter.csproj",
       "packagesPath": "C:\\Users\\ridvan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ridvan\\source\\repos\\doesntmatter\\doesntmatter\\obj\\",
+      "outputPath": "C:\\Users\\ridvan\\source\\repos\\DoesntMatter\\doesntmatterBackend\\doesntmatter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ridvan\\AppData\\Roaming\\NuGet\\NuGet.Config",

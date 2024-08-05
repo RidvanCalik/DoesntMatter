@@ -56,39 +56,84 @@ namespace doesntmatter.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Categories")
-                        .IsRequired()
+                    b.Property<string>("Actors")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Awards")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("BoxOffice")
+                        .HasColumnType("int");
 
                     b.Property<string>("Comments")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Director")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("MovieDescription")
+                    b.Property<string>("Genre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("MovieName")
+                    b.Property<string>("Plot")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("MoviePoster")
+                    b.Property<string>("Poster")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ReleaseDate")
+                    b.Property<DateTime?>("Released")
                         .HasColumnType("datetime2");
 
-                    b.Property<byte>("Score")
+                    b.Property<int>("Runtime")
+                        .HasColumnType("int");
+
+                    b.Property<byte?>("Score")
                         .HasColumnType("tinyint");
 
-                    b.Property<string>("YoutubeTrailerLink")
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Writer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("imdbID")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Movie");
+                });
+
+            modelBuilder.Entity("doesntmatter.Models.Ratings", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Source")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("Ratings");
                 });
 
             modelBuilder.Entity("doesntmatter.Models.User", b =>
@@ -126,6 +171,18 @@ namespace doesntmatter.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("doesntmatter.Models.Ratings", b =>
+                {
+                    b.HasOne("doesntmatter.Models.Movie", null)
+                        .WithMany("Ratings")
+                        .HasForeignKey("MovieId");
+                });
+
+            modelBuilder.Entity("doesntmatter.Models.Movie", b =>
+                {
+                    b.Navigation("Ratings");
                 });
 #pragma warning restore 612, 618
         }
